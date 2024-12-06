@@ -1,46 +1,125 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main App Container */
+.App {
+  text-align: center;
+  background: white;
   padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+  color: #5e60ce;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+/* Input Timer Container */
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Input Box */
+.inputBox {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.inputBox input {
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  text-align: center;
+  border: 2px solid #5e60ce;
+  border-radius: 5px;
+  background-color: #f4f4f9;
+  outline: none;
+}
+
+.inputBox input:focus {
+  border-color: #4361ee;
+  box-shadow: 0 0 5px rgba(67, 97, 238, 0.5);
+}
+
+/* Timer Button */
+.timerButton {
+  background-color: #4361ee;
+  color: white;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.timerButton:hover {
+  background-color: #3a4fcc;
+}
+
+/* Timer Display Container */
+.showContainer {
+  margin-top: 2rem;
+}
+
+.showBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.showBox div {
+  background-color: #e0f2fe;
+  border: 2px solid #5e60ce;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  min-width: 3rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Button Container */
+.buttonContainer {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.showButton {
+  background-color: #48bfe3;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.showButton:hover {
+  background-color: #3995b5;
 }
 
-.card {
-  padding: 2em;
+.showButton:active {
+  transform: scale(0.98);
 }
-
-.read-the-docs {
-  color: #888;
-}
-body {
-  background-color: gray;
-}
-
